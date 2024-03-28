@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Restraunts</string>
+    <string name="restraunt_name">Restraunt Name</string>
+    <string name="restraunt_contact">Restraunt Contact</string>
+    <string name="restraunt_description">Restraunt Description</string>
+    <string name="restraunt_location">Restraunt Location</string>
+    <string name="add_restraunt">Add Restraunt</string>
+    <string name="add_a_new_restraunt">Add a new restraunt</string>
+</resources>
