@@ -6,4 +6,13 @@
     <string name="restraunt_location">Restraunt Location</string>
     <string name="add_restraunt">Add Restraunt</string>
     <string name="add_a_new_restraunt">Add a new restraunt</string>
+    <string name="search">Search</string>
+    <string name="filter_restrauts">Filter Restrauts</string>
+    <string name="search_by_restraunt_name">Search by restraunt name</string>
+    <string name="add_restraunt_name">Add restraunt name</string>
+    <string name="restraunt_rating">Restraunt Rating</string>
+    <string name="search_by_restraunt_rating">Search By Restraunt Rating</string>
+    <string name="add_restraunt_rating">Add restraunt rating</string>
+    <string name="add_restraunt_location">Add restraunt location</string>
+    <string name="eatery_explorer">Eatery Explorer</string>
 </resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterRestraunt"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/filter_restrauts"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       >
+       <com.google.android.material.textfield.TextInputEditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="@string/add_restraunt_name"
+           android:id="@+id/tv_searchbyrestrauntname"
+           />
+   </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_by_restraunt_name"
+        android:textStyle="bold"
+        android:id="@+id/btn_searchbyrestrauntname"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_restraunt_rating"
+            android:id="@+id/tv_searchbyrestrauntrating"
+            android:inputType="numberDecimal"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_by_restraunt_rating"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:id="@+id/btn_searchbyrestrauntrating"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_restraunt_location"
+            android:id="@+id/tv_searchbyrestrauntlocation"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search By Restraunt Location"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:id="@+id/btn_searchbylocation"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>

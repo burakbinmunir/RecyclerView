@@ -79,20 +79,28 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-        <com.google.android.material.textfield.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
+            android:hint="@string/restraunt_rating"
+            android:inputType="number"
+            android:id="@+id/tvRestrauntRating"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/add_restraunt"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/black"
-                android:id="@+id/btnAddNewRestraunt"
-                />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_restraunt"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:id="@+id/btnAddNewRestraunt"
+        />
+
     </LinearLayout>
 </LinearLayout>

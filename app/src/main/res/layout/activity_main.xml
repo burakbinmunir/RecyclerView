@@ -8,14 +8,50 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:padding="16dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/restraunt_app_icon_foreground"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eatery_explorer"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        />
+
+</LinearLayout>
 
 
-    <androidx.recyclerview.widget.RecyclerView
+<androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:layout_marginTop="100dp"
         android:id="@+id/rv_restraunts"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp">
     <ImageButton
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -24,11 +60,26 @@
         android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="20dp"
+
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
         android:id="@+id/btnAddRestraunt"/>
 
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circular_button_background"
+        android:src="@mipmap/search_icon_foreground"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:id="@+id/btn_search"
+        android:contentDescription="Search Button" />
+
+    </LinearLayout>
 
 
 

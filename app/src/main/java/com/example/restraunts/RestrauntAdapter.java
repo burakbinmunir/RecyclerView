@@ -32,6 +32,7 @@ public class RestrauntAdapter extends RecyclerView.Adapter<RestrauntAdapter.View
         holder.tv_restrauntLocation.setText(restrauntsArrayList.get(position).getRestrauntLocation());
         holder.tv_restrauntDescription.setText(restrauntsArrayList.get(position).getRestrauntDescription());
         holder.tv_restrauntContact.setText(restrauntsArrayList.get(position).getRestrauntContact());
+        holder.tv_restrauntRating.setText(restrauntsArrayList.get(position).getRating());
     }
 
     @Override
@@ -41,7 +42,7 @@ public class RestrauntAdapter extends RecyclerView.Adapter<RestrauntAdapter.View
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView tv_restrauntName, tv_restrauntLocation, tv_restrauntDescription, tv_restrauntContact;
+        TextView tv_restrauntName, tv_restrauntLocation, tv_restrauntDescription, tv_restrauntContact,tv_restrauntRating;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -50,6 +51,7 @@ public class RestrauntAdapter extends RecyclerView.Adapter<RestrauntAdapter.View
             tv_restrauntContact = itemView.findViewById(R.id.tv_restrauntContact);
             tv_restrauntDescription = itemView.findViewById(R.id.tv_restrauntDescription);
             tv_restrauntLocation = itemView.findViewById(R.id.tv_restrauntLocation);
+            tv_restrauntRating = itemView.findViewById(R.id.tv_restrauntRating);
         }
     }
 }
